@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+<body>
+    <center>   
+         <h3> hai </h3>
+    <img src="https://cdn.pixabay.com/photo/2014/02/27/16/10/flowers-276014__340.jpg" alt="" id="img" height="300" width="300">
+    <button id="hide">hide</button>
+    <button id="show">show</button>
+    <button id="toggle">toggle</button>
+</center>
+<script>
+    $(document).ready(function()
+    {
+        $("#hide").click(function()
+        {
+            
+            $("img").hide(2000);
+            $("h3").hide(2000);
+       
+        });
+        $("#show").click(function()
+        {
+            
+            $("#img").show(2000);
+            $("h3").show(2000);
+        });
+        $("#toggle").click(function()
+        {
+            $("h3").toggle(2000);
+            $("#img").toggle(2000);
+        });
+    });
+
+</script>
+
+    
+</body>
+</html>

@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+</head>
+
+<body>
+    <!-- <p id="p1" style="color: rgb(172, 54, 172);">if you  double-click on me, I will dissappear</p> -->
+    <input type="text" id="input"><br>
+    <br>
+    NAME: <input type="text" name="fullname" id=""><br>
+    <br>
+    E-mail: <input type="text" name="email" id="">
+
+</body>
+<script>
+    $(document).ready(function () {
+        //     $("p").dblclick(function(){
+        //         $(this).hide();
+        //     });
+        // });
+        //               $("#p1").mouseenter(function(){
+        //                    alert("you enter the text!");
+        // });
+
+
+        //  $("#p1").mouseleave(function(){
+        //     alert("leave the text");
+        // //  });
+        //  $("#p1").mousedown(function(){
+        //     w alert("mouse down over p1");
+        //  });
+        //   $("#p1").hover(function(){
+        //      alert("you entered the text");
+        //   });
+         $("input").keydown(function(){
+             $("input").css("background-color","green");
+         });
+        // $("input").keyup(function(){
+        //     $("input").css("background-color","pink");
+        // });
+    //     $("input").focus(function(){
+    //         $(this).css("background-color","red");
+    // });
+    // $("input").blur(function(){
+    //     $(this).css("background-color","yellow");
+    // });
+});
+</script>
+
+</html>

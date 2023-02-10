@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+
+<body>
+  <form action="">
+    firstname : <input type="text" id="first" placeholder="enter name" onkeyup="clearmsg('sp1')" ><span style="color: red;" id="sp1"></span><br><br>
+    lastname : <input type="text"  id="second" placeholder="enter name" onkeyup="clearmsg('sp2')"><span style="color: red;" id="sp2"></span><br><br>
+    mobile: <input type="text"  id="mobile"  pattern="[0-9]{10}" placeholder="enter mobile"   onkeyup="clearmsg('sp3')"><span style="color: red;" id="sp3"></span><br><br>
+    adress: <input type="text"  id="adress" placeholder="enter adress" onkeyup="clearmsg('sp4')"><span style="color: red;" id="sp4"></span><br><br>
+    username : <input type="text"  id="username" minlength="10" maxlength="10" placeholder="enter username" onkeyup="clearmsg('sp5')"><span style="color: red;" id="sp5"></span><br><br>
+    password : <input type="text" id="pswrd"  pattern="(?=^.{8,}$)((?=.*\d)|(?=.*\W+))(?![.\n])(?=.*[A-Z])(?=.*[a-z]).*$" placeholder="enter pwsrd" onkeyup="clearmsg('sp6')"><span style="color: red;" id="sp6"></span><br><br>
+    email: <input type="text"  id="mail" pattern="[a-zA-Z0-9._%+-]+@[a-z0-9.-]+\.[a-zA-Z]{2,4}" placeholder="enter mail id" onkeyup="clearmsg('sp7')"><span style="color: red;" id="sp7"></span><br><br>
+    <button onclick="return valid()">submit</button>
+   
+  </form>
+  <script>
+  function valid()
+  {
+    var first=document.getElementById("first").value;
+    var second=document.getElementById("second").value;
+    var mobile=document.getElementById("mobile").value;
+    var adress=document.getElementById("adress").value;
+    var username=document.getElementById("username").value;
+    var password=document.getElementById("pswrd").value;
+    var email=document.getElementById("mail").value;
+    if(first=="")
+    {
+      document.getElementById("sp1").innerHTML="enter name";
+      return false;
+    }
+    if(second=="")
+    {
+      document.getElementById("sp2").innerHTML="enter name";
+      return false;
+    }
+    if(mobile=="")
+    {
+      document.getElementById("sp3").innerHTML="enter mobile";
+      return false;
+    }
+    if(adress=="")
+    {
+      document.getElementById("sp4").innerHTML="enter adress";
+      return false;
+    }
+    if(username=="")
+    {
+      document.getElementById("sp5").innerHTML="enter username";
+      return false;
+    }
+    if(password=="")
+    {
+      document.getElementById("sp6").innerHTML="enter pswrd";
+      return false;
+    }
+    if(email=="")
+    {
+      document.getElementById("sp7").innerHTML="enter mail";
+      return false;
+    }
+    
+  }
+  function clearmsg(sp)
+  {
+    document.getElementById(sp).innerHTML="";
+  }
+  </script>
+
+</body>
+
+</html>

@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <table>
+        <tr>
+            <td> <input type="text" id="num"><br></td>
+        </tr>
+        <tr>
+            <td style="align-items: center;padding-left: 30%;"><button onclick="submit()">submit</button></td>
+        </tr>
+
+        <tr>
+            <td> <input type="text" id="num1"><br></td>
+        </tr>
+    </table>
+    <p id="days"></p>
+
+    <script>
+
+        function submit() {
+
+            num =Number(document.getElementById("num").value);
+            num1=document.getElementById("num1").value;
+            //    num1=document.getElementById("num1").value=num1;
+            if (num==2)
+             {
+                // alert(num);
+                num1 = "monday";
+            }
+            else if (num==3) {
+                num1 = "tuesday";
+            }
+            else if (num==4) {
+                num1 = "wednesday";
+            }
+            else if (num==5) {
+                num1 = "thursday";
+            }
+            else if (num==6) {
+                num1 = "friday";
+            }
+            else {
+                num1 = "not find";
+            }
+            document.getElementById("days").innerHTML = num;
+            document.getElementById("num1").value=num1;
+
+        }
+    </script>
+
+</body>
+
+</html>

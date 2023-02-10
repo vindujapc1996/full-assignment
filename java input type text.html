@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+     
+  
+ 
+ 
+    
+    <table>
+        <tr>
+            <td><input type="text" id="num"></td>
+            <td><input type="text" id="num2"></td>
+        </tr>
+        
+ <tr><td style="align-items: center;padding-left: 30%;"><button onclick="add()">submit</button></td>   </tr>
+        
+         <tr><td style="align-items: center;padding-left: 30%;"><button onclick="subtract()">subtract</button></td> 
+          </tr>
+          <tr><td style="align-items: center;padding-left: 30%;"><button onclick="division()">division</button></td> 
+          </tr>
+          <tr><td style="align-items: center;padding-left: 30%;"><button onclick="multiplay()">multiplay</button></td> 
+          </tr>
+        
+        
+          
+          <tr><td style="padding-left: 20%;"><input type="text"id="dis"></td>   </tr>
+        </table>
+     
+
+
+    
+        
+    </body>
+    <script>
+        function add()
+        {
+        var a,b,c;
+
+a=Number(document.getElementById("num").value);
+b=Number(document.getElementById("num2").value);
+c=a+b;
+document.getElementById("dis").value=a+b;
+document.getElementById("display").innerHTML=a+b;
+
+}
+function subtract()
+{
+       a=Number(document.getElementById("num").value);
+b=Number(document.getElementById("num2").value);
+c=a-b;
+document.getElementById("dis").value=a-b;
+document.getElementById("display").innerHTML=a-b;
+
+    
+}
+function division()
+{
+a=Number(document.getElementById("num").value);
+b=Number(document.getElementById("num2").value);
+c=a/b;
+document.getElementById("dis").value=a/b;
+document.getElementById("display").innerHTML=a/b;
+}
+    function multiplay()
+{
+a=Number(document.getElementById("num").value);
+b=Number(document.getElementById("num2").value);
+c=a*b;
+document.getElementById("dis").value=a*b;
+document.getElementById("display").innerHTML=a*b;
+}
+
+    </script>
+    
+
+</html>

@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+</head>
+<body>
+    <p>paragraph 1</p>
+    <p>paragraph 2</p>
+    <ol>
+        <li>list no.1</li>
+        <li>list no.2</li>
+        <li>list no.3</li>
+    </ol>
+    <button id="btn1">appened text</button>
+    <button id="btn2">appened item</button>
+    
+</body>
+<script>
+    $(document).ready(function(){
+        $("#btn1").click(function(){
+            $("p").append("<b>newly added appened text");
+            });
+                $("#btn2").click(function(){
+                    $("ol").append("<li><b> newly added appened item</li></b>");
+                    });
+                });
+
+
+
+        
+</script>
+</html>

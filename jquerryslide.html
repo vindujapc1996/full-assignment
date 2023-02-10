@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+    <style>
+        #p1,#f1{
+            padding: 5px;
+            text-align: center;
+            background-color: rgb(117, 200, 200);
+            border: 1px solid rgb(140, 213, 32);
+
+        }
+        #p1{
+            background-color: rgb(238, 206, 166);
+            padding: 50px;
+            display: none;
+        }
+    </style>
+</head>
+<body>
+    <div id="f1"><button>click me</button></div>
+    <div id="p1"><img src="https://cdn.pixabay.com/photo/2014/02/27/16/10/flowers-276014__340.jpg" alt="" id="img" height="300" width="600"></div>
+     
+</body>
+    <script>
+        $(document).ready(function()
+        {
+            $("#f1").click(function()
+            {
+                $("#p1").slideDown(2000);
+                $("#p1").slideUp(2000);
+                $("#p1").slideToggle("slow");
+            });
+        });
+    </script>
+   
+</html>

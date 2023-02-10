@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+                body{
+            background-color: antiquewhite;
+        }
+        table,tr,td{
+            border: 2px solid black;
+            border-collapse: collapse;
+            padding: 3%;
+            width: 10cm;
+            margin-left: 30%;
+        }
+    </style>
+</head>
+<body>
+    <form >
+        <table>
+   <center>
+     <h1>Student Registration Form</h1></center>
+     <tr>
+  <td> Name : </td><td>  <input type="text" ></td> </tr>
+  <tr>
+    <td>  fathers name : </td> <td><input type="text" required></td></tr>
+<tr>
+ <td>  date of birth:</td> <td><input type="date" required></td></tr>
+ <tr>
+  <td> gender :</td>  <td><input type="radio" name="gender" >male <input type="radio" name="gender">female</td></tr>
+  <tr>
+  <td> Qualification:</td> <td> <input type="checkbox" >sslc <input type="checkbox" >plus two <input type="checkbox"  >Bachelors degree</td> </tr>
+  <tr>
+   <td> adress : </td> <td><textarea name="" id="" cols="30" rows="6"></textarea> </td> </tr>
+   <tr>
+    <td> district :</td> <td><select>
+        <option value="">select your district</option>
+        <option value="">wayanad</option>
+        <option value="">malapuram</option>
+        <option value="">kollam</option>
+        <option value="">kottayam</option>
+       </select></td></tr>
+    <tr>
+     <td> mobile no : </td> <td><input type="text" pattern="[0-9]{10}" ></td></tr>
+     <tr>
+ <td> email : </td> <td><input type="email" pattern="^([a-zA-Z0-9_\-\.]+)@([a-zA-Z0-9_\-\.]+)\.([a-zA-Z]{2,5})$ "> </td></tr>
+ <tr>
+      <td> password : </td> <td><input type="password" name="" id="" maxlength="8" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" required></td></tr>
+      <tr >
+
+ <td colspan="2"><center>  <button>SUBMIT</button></center></td></tr>
+
+</table>
+</form> 
+
+</body>
+</html>

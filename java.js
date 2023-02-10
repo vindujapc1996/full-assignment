@@ -1,0 +1,11 @@
+var a,b,c;
+var a=70;
+var b=40;
+var c=a/b;
+alert(c);
+c=a-b;
+alert(c);
+c=a*b;
+alert(c);
+c=a+b;
+alert(c);

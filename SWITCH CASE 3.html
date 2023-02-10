@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <table>
+        <tr>
+            <td><input type="text" id="num"></td>
+            <td><input type="text" id="num2"></td>
+            <td><input type="text" id="num3"></td>
+
+        </tr>
+
+        <tr>
+            <td style="align-items: center;padding-left: 30%;"><button onclick="operate()">submit</button></td>
+        </tr>
+
+        <!-- <tr><td style="align-items: center;padding-left: 30%;"><button onclick="subtract()">subtract</button></td> 
+          </tr>
+          <tr><td style="align-items: center;padding-left: 30%;"><button onclick="division()">division</button></td> 
+          </tr>
+          <tr><td style="align-items: center;padding-left: 30%;"><button onclick="multiplay()">multiplay</button></td> 
+          </tr> -->
+
+
+
+        <tr>
+            <td style="padding-left: 20%;"><input type="text" id="dis"></td>
+        </tr>
+    </table>
+
+
+    <script>
+
+
+        function operate() {
+            let a, b, c;
+            a=Number(document.getElementById("num").value);
+            b=Number(document.getElementById("num2").value);
+            c=document.getElementById("num3").value;
+
+
+            switch (c) {
+                case "+":
+                    c=a+b;
+                    
+                    break;
+
+                case "-":
+                    c=a-b;
+                    break;
+
+                case "*":
+                    c=a*b;
+                    break;
+                case "/":
+                    c=a/b;
+                    alert(c)
+                     break;
+                default:
+                    c = "hai";
+            }
+
+            document.getElementById("dis").value = c;
+
+
+        }
+    </script>
+
+
+</body>
+
+</html>
